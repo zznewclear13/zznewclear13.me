@@ -1,0 +1,52 @@
+.home-section
+    about
+        .about-wrap  
+            min-height: 400px  
+            display: flex
+            flex-direction: row
+            background:
+                image: url('../images/about-background.jpg')
+                position: center
+                size: cover
+            
+            .col-left
+                display: flex
+                width: 50%
+                justify-content: center
+                .portrait
+                    width: 200px
+                    height: 200px
+                    margin: auto
+                    background:
+                        image: url('../images/about-portrait.png')
+                        position: center
+                        size: contain
+                        repeat: no-repeat
+
+            .col-right
+                width: 50%
+                display: flex
+                padding-right: 20px
+                .word-wrap
+                    margin: auto 0
+
+@media screen and ( max-width: 550px )
+    .home-section
+        about
+            .about-wrap
+                padding: 0
+                flex-direction: column
+                align-items: center
+                .col-left
+                    width: 100%
+                    padding-bottom: 20px
+                    .portrait   
+                        width: 75%
+                        
+        
+                .col-right
+                    padding-left: 20px
+                    width: 100%
+
+                    text-align: center
+                    order: -1

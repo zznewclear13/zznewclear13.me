@@ -1,0 +1,103 @@
+@import '../0-tools/bourbon/_bourbon.scss'
+
+.home-section
+    articles
+        display: inline-flex
+        flex-direction: row
+        justify-content: left
+        width: 300vw
+        transform: translateX(0%)
+        transition: transform 0.3s ease-in-out
+        .article-wrap
+            display: block
+            width: 33.3%
+            .vueArticle
+                
+                left: 0
+                position: relative
+                display: none
+                grid-template-columns: auto auto auto
+                row-gap: 20px
+                column-gap: 20px
+                margin: 20px 
+                transition: all 0.3s ease-in-out
+
+                .article-thumb
+                    display: block 
+                    float: left
+                    position: relative
+                    transition: all 0.3s ease-in-out  
+                    text-align: center
+
+                    .thumb-image
+                        background: 
+                            size: cover
+
+                        &::after
+                                content: ""
+                                display: block
+                                padding-top: 70%              
+
+
+                    .article-meta
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0   
+                        background: fade-out($selection-color, 0.3)
+                        padding: 10px 10px 30px
+                        transition: all 0.3s ease-in-out
+                        opacity: 0
+
+                        color: black 
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-end 
+                        //transform: translate(0%, 100%)
+                
+                        .name
+                            font-size: 18px
+
+                        .date
+                            font-style: italic 
+
+                .article-thumb:hover
+                    margin: -10px
+                    
+                    .thumb-image
+                        filter: blur(3px)
+
+                    .article-meta
+                        opacity: 1
+                    //transform: translate(0%, 0%)              
+        
+            .vueArticle.show
+                display: grid
+
+@media screen and ( max-width: 550px )
+    .home-section
+        articles .article-wrap .vueArticle
+            grid-template-columns: auto auto
+            column-gap: 15px
+            row-gap: 15px
+            margin: 15px
+            .article-thumb .article-meta
+                padding-bottom: 20px
+
+            .article-wrap:hover
+                margin: -4px
+
+                    
+@media screen and ( max-width: 380px )
+    .home-section
+        articles .article-wrap .vueArticle
+            column-gap: 10px
+            row-gap: 10px
+            margin: 10px
+            .article-thumb .article-meta
+                padding-bottom: 10px
+                .name
+                    font-size: 14px
+                .date
+                    font-size: 10px    

@@ -1,0 +1,218 @@
+@import '../0-tools/bourbon/_bourbon.scss'
+    
+.home-wrap
+    header-wrap
+        z-index: 999
+        width: 100vw
+        max-width: 100vw
+        display: block
+        margin: 0
+        padding: 0
+        .header
+            height: 200px
+            max-width: 100%
+            background-color: transparent
+            padding: 0
+            margin: 0
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            transition: all 0.3s ease-in-out
+            
+
+            .logo                  
+                width: 80px 
+                height: 80px                 
+                background: 
+                    image: url(../images/header/logoWhite.svg)
+                    repeat: no-repeat
+                    position: center
+                    size: contain
+                
+                padding: 0
+                margin: 0 0 0 50px
+                background-color: transparent
+
+                transition: all 0.3s ease-in-out 0.3s
+
+            .site-nav
+                position: relative
+                height: 100%
+                padding: 0
+                max-width: 100%
+                margin: 0
+
+                ul           
+                    list-style: none
+                    margin: 0 30px 0 0 
+                    padding: 0
+                    max-width: 100%
+                    height: 100%
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+
+                    li  
+                        text-decoration: underline
+                        font-family: 'Fira Sans', sans-serif
+                        font-size: 25px
+                        line-height: 1.6
+                        float: right
+                        margin-right: 30px
+                        user-select: none
+                        margin-left: 0px
+                        a
+                            color: white
+                            text-decoration: none
+                            display: inline-block
+                        
+                        a::after
+                                content: ''
+                                width: 0px
+                                height: 2px
+                                display: block
+                                background: white
+                                transition: 300ms
+
+                        a:hover::after
+                            width: 100%
+
+            .mobile-nav-toggle
+                display: none
+                position: relative               
+                margin: 0 30px
+                padding: 0
+                max-width: 100%
+                width: 50px
+                height: 50%
+                align-items: center
+                cursor: pointer
+
+                span,
+                span::before,
+                span::after
+                    margin: 0
+                    padding: 0
+
+                    content: ""
+                    display: block
+                    height: 2px
+                    width: 100%
+                    background: #333
+                    position: relative
+
+                    transition: all 0.3s ease-in-out
+
+                span::before
+                    top: 14px
+
+                span::after
+                    bottom: 16px    
+
+                &.is-open span
+                    background: transparent    
+
+                &.is-open span:before
+                    transform-origin: center
+                    transform: rotate(-45deg)
+                    top: 1px  
+
+                &.is-open span:after
+                    transform-origin: center
+                    transform: rotate(45deg)
+                    bottom: 1px             
+
+        .mobile-nav
+            z-index: 999
+            display: block
+            position: absolute
+            top: 80px
+            width: 100%
+            background: white
+            padding: 0px 0 20px
+            transform-origin: top
+            transform: scaleY(0)
+            
+            transition: all 0.3s ease-in-out
+
+            ul
+                list-style: none     
+                margin: 0
+                padding: 0
+
+                li 
+                    text-align: center
+                    margin-bottom: 10px
+                    margin-left: 0px
+                    font-size: 20px
+                    font-family: 'Fira Sans', sans-serif
+                    line-height: 1.6
+                    a
+                        user-select: none
+                        color: black
+                        text-decoration: none
+                        display: inline-block
+                    
+                    a::after
+                            content: ''
+                            width: 0px
+                            height: 2px
+                            display: block
+                            background: $text-color
+                            transition: 300ms
+
+                    a:hover::after
+                        width: 100%
+
+
+@media screen and ( max-width: 550px)
+    .home-wrap
+        header-wrap
+            position: sticky
+            top: 0
+            box-shadow: 0 8px 8px rgba(0,0,0,0.2) 
+            .header
+                height: 80px
+                background-color: white
+
+                .logo
+                    height: 45px
+                    width: 45px
+                    margin-left: 15px
+                    background: 
+                        image: url(../images/header/logoBlack.svg)
+
+                .site-nav
+                    height: 100%
+
+                .site-nav ul
+                    display: none
+
+                .mobile-nav-toggle
+                    display: flex
+
+         
+            .mobile-nav.is-open
+                margin-top: 0
+                transform: scaleY(1)
+                box-shadow: 0 8px 8px rgba(0,0,0,0.2)       
+                      
+@media screen and ( max-width: 380px)
+    .home-wrap
+        headerwrap
+            .header
+                .mobile-nav-toggle
+                    width: 40px
+
+                    span::before
+                        top: 12px
+                    span::after
+                        bottom: 14px 
+
+            .mobile-nav.is-open 
+                padding: 0 0 5px
+                ul
+                    li
+                        margin-bottom: 5px
+                        font-size: 15px

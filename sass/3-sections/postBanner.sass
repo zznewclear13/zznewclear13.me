@@ -1,0 +1,24 @@
+@import '../0-tools/bourbon/_bourbon.scss'
+
+.home-wrap
+    postBanner
+        pointer-events: none
+        display: flex
+        margin: -200px 0 0px
+        padding: 0
+        max-width: 100%
+        background: 
+            image: url('../images/banner/postBanner.jpg')
+            position: center
+            size: cover
+        height: 300px
+        transition: all 0.3s ease-in-out  
+        opacity: 1
+
+@media screen and ( max-width: 550px )
+    .home-wrap
+        postBanner
+            margin-top: -80px
+            height: 80px
+            opacity: 0
+                

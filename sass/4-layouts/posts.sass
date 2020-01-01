@@ -1,0 +1,25 @@
+$selection-color: #FFF498
+    
+body
+    overflow: overlay
+    width: 100vw
+    .home-wrap 
+        z-index: 999 
+        padding: 0
+        max-width: 100vw
+        margin: 0
+
+::selection
+    background: $selection-color
+
+::-moz-selection
+    background: $selection-color
+
+img::selection
+    background: transparent
+
+img::-moz-selection
+    background: transparent
+
+body
+    -webkit-tap-highlight-color: transparent

@@ -5,8 +5,18 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
         meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
         title ZZNEWCLEAR13.ME - My Personal Website
+        link(href='/favicon.ico', rel='icon', type='image/x-icon')
     
-    body
-        h1 Welcome To my personal website!
-        img(src="../images/articles/post_01/Stadium_Design.jpg")
-        //img(src=require("../images/articles/post_01/Stadium_Design.jpg"))
+    body.scrollBar
+        .home-wrap
+            include ./header.pug
+            include ./banner.pug
+
+        .home-section
+
+            include ./vuetabs.pug
+            include ./articles.pug
+            include ./about.pug
+            include ./contact.pug
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        

@@ -1,3 +1,17 @@
-html{
-    font-size: 18px;
-}
+@import '0-tools/bourbon/_bourbon.scss';
+@import '0-tools/normalize.scss';
+
+@import '1-base/_vars.sass';
+@import '1-base/_base.sass';
+
+@import '2-modules/scrollbar.sass';
+
+@import '3-sections/header.sass';
+@import '3-sections/banner.sass';
+@import '3-sections/tab.sass';
+@import '3-sections/articles.sass';
+@import '3-sections/vuetabs.sass';
+@import '3-sections/about.sass';
+@import '3-sections/contact.sass';
+
+@import '4-layouts/homePage.sass';

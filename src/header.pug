@@ -1,0 +1,19 @@
+mixin nav-content()
+    ul
+        li: a(href="#Work") Work
+        li: a(href="#About") About
+        li: a(href="#Contact") Contact
+
+
+header-wrap
+    .header   
+        a(href="").logo
+
+        nav.site-nav
+            +nav-content()
+
+        .mobile-nav-toggle: span
+
+    .mobile-nav
+        +nav-content()    
+      

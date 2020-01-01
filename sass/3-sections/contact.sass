@@ -1,0 +1,57 @@
+.home-section
+    contact
+        padding: 0
+        .contact-wrap
+            position: relative
+            display: flex
+            align-items: center
+            background-color: #444
+            overflow: hidden
+            height: 150px
+            
+            .button
+                display: block
+                width: 100vw
+                border: 0
+                height: 100%
+                cursor: pointer
+                overflow: hidden
+                text-align: center
+                position: absolute
+
+            .button::after
+                content: ""
+                display: block
+                height: 200%
+                width: 100%
+                border-radius: 50%
+                position: absolute
+                top: 0%
+                left: 0%
+                transform-origin: center
+                transform: translate(-50%, -50%) scale(0,0)
+                background-color: #f37273
+                transition: all 0.5s ease-in-out
+
+            .button:hover::after
+                transform: translate(-50%, -50%) scale(2.3,2.3)
+                
+            .link
+                position: relative
+                width: auto
+                padding: 0
+                font-size: 20px
+                margin: auto
+                color: white
+                pointer-events: none
+                user-select: none
+                font-family: 'Fira Sans', sans-serif
+                
+
+
+
+@media screen and ( max-width: 550px )
+    .home-section
+        contact
+            .contact-wrap
+                height: 100px   

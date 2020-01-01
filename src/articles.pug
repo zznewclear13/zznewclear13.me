@@ -1,0 +1,96 @@
+mixin thumb(pugclass, pughref, image, name, date )
+    a(class="article-thumb "+pugclass, href="./posts"+pughref)
+        .thumb-image(style='background-image:url(' + require('../images/articles/' +`${image}` + '.jpg') + ')')
+        
+        .article-meta
+            .name= name
+            .date= date
+
+articles
+    .article-wrap
+        .vueArticle.design.show
+            +thumb('design',
+                    '/lagos-stadium-competition.html',
+                    'design_01',
+                    'Lagos-Stadium-Competition',
+                    'Dec 17, 2018')
+            +thumb('design',
+                    '/beijing-wudaokou-cinema-design.html',
+                    'design_02',
+                    'Wudaokou-Cinema-Design',
+                    'May 14, 2018')
+            +thumb('design',
+                    '/qingdao-restaurant-design.html',
+                    'design_03',
+                    'Qingdao-Restaurant-Design',
+                    'Jan 5, 2018')
+            +thumb('design',
+                    '/beijing-shangdi-urban-design.html',
+                    'design_04',
+                    'Beijing-Shangdi-Urban-Design',
+                    'Nov 01, 2017')
+            +thumb('design',
+                    '/beijing-dashila-commercial.html',
+                    'design_05',
+                    'Beijing-Dashila-Commercial',
+                    'Jun 07, 2017')
+            +thumb('design',
+                    '/beijing-fangjiahutong-courtyard.html',
+                    'design_06',
+                    'Beijing-Fangjiahutong-Courtyard',
+                    'Apr 15, 2017')
+            +thumb('design',
+                    '/beijing-jiuxianqiao-community.html',
+                    'design_07',
+                    'Beijing-Jiuxianqiao-Community',
+                    'Jan 01, 2017')
+            +thumb('design',
+                    '/beijing-tianning-museum.html',
+                    'design_08',
+                    'Beijing-Tianning-Museum',
+                    'Nov 04, 2016')
+            +thumb('design',
+                    '/beijing-tsinghua-hotel.html',
+                    'design_09',
+                    'Beijing-Tsinghua-Hotel',
+                    'Dec 29, 2015')
+    .article-wrap
+        .vueArticle.research
+            +thumb('research',
+                    '/future-of-greenland.html',
+                    'research_01',
+                    'Future-of-Greenland',
+                    'Dec 06, 2019')                
+            +thumb('research',
+                    '/camera-positioning.html',
+                    'research_02',
+                    'Camera-Positioning',
+                    'Jun 13, 2019')                
+            +thumb('research',
+                    '/uwb-positioning.html',
+                    'research_03',
+                    'UWB-Positioning',
+                    'Jan 09, 2019')
+            +thumb('research',
+                    '/kaihuasi-temple.html',
+                    'research_04',
+                    'Kaihuasi-Temple',
+                    'July 05, 2017')              
+
+    .article-wrap
+        .vueArticle.other     
+            +thumb('other',
+                    '/my-personal-website.html',
+                    'other_01',
+                    'My-Personal-Website',
+                    'Jan 06, 2020')   
+            +thumb('other',
+                    '/to-be-continued.html',
+                    'other_02',
+                    'To-Be-Continued',
+                    'Jan 06, 2020')   
+            +thumb('other',
+                    '/to-be-continued.html',
+                    'other_02',
+                    'To-Be-Continued',
+                    'Jan 06, 2020')  
