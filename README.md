@@ -19,6 +19,6 @@ $ npm run start
 Note that sometimes changing Pug include file or MD file may not refresh the browser.
 
 ### 2. Production mode
-This will build your website in your `./dist` folder. You may change webpack configure to make your ideal file structure.
+This will build your website in your `./dist` folder. You may change webpack configuration to get your ideal file structure.
 ```
 $ npm run build
