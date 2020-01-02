@@ -22,7 +22,7 @@ This will start the environment with file watching, browser synchronisation, aut
 ```
 $ npm run start
 ```
-Note that sometimes changing Pug include file or MD file may not refresh the browser.
+Note that sometimes changing Pug include files or markdown files may not refresh the browser.
 
 ### 2. Production mode
 This will build your website in your `./dist` folder. You may change webpack configuration to get your ideal file structure.
