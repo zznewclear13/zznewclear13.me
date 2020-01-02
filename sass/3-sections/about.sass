@@ -28,7 +28,17 @@
                 display: flex
                 padding-right: 20px
                 .word-wrap
+                    display: flex
+                    flex-direction: column
                     margin: auto 0
+                    h2
+                        margin: 20px auto 20px 0
+                        background: white
+                    .one
+                        margin: 0 auto 10px 0
+                        background: white
+                    .two
+                        background-color: white        
 
 @media screen and ( max-width: 550px )
     .home-section
@@ -50,3 +60,11 @@
 
                     text-align: center
                     order: -1
+
+                    .word-wrap
+                        h2
+                            margin: 20px auto
+                        .one
+                            margin: 0 auto 10px auto
+                        .two
+                            margin: 0 30px 10px    

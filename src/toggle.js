@@ -19,7 +19,6 @@
     $(window).resize(function(){
         if($(window).width()>550){
             $('.mobile-nav-toggle, .mobile-nav').removeClass('is-open');
-            console.log('remove class');
         }
     })
 })(jQuery);

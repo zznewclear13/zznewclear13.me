@@ -52,7 +52,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.pug',
             title: 'Home Page',
-            chunks: ['app']
+            chunks: ['app'],
+            favicon: './images/favicon.ico'
         }),
         ...InjectMarkdown.map(p => {
             return new HtmlWebpackPlugin({
