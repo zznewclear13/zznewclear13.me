@@ -2,7 +2,7 @@
 title: Kaihua Temple Research
 disc: no disc here
 date: Jul 05, 2017
-path: kaihua temple research
+path: kaihua-temple-research
 ---
 <special>
 </special>
