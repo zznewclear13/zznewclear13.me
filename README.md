@@ -1,5 +1,5 @@
 # zznewclear13.me
-This is the source code for [my personal website](https://zznewclear13.me) (under construction).
+This is the source code for [my personal website](https://zznewclear13.me).
 
 ## System Preparation
 To use this project, you will need [NodeJS](https://nodejs.org) installed on your machine.
