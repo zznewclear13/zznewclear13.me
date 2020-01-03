@@ -20,6 +20,6 @@ We placed six anchors in the supermarket and asked students carrying a tag with 
 
 ![Process](../images/articles/research_03/Process.jpg)
 
-Raw data were filtered, interpolated, and smoothed using moving average to reduce possible deviation. Following is a collection our final results.
+Raw data were filtered, interpolated, and smoothed using moving average to reduce possible deviation. Following is a collection of our final results.
 
 ![Result](../images/articles/research_03/Result.jpg)
