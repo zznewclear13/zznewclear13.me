@@ -31,7 +31,7 @@ var $color = 0.5;
         timer2 = setTimeout(function(){
             timer1 = setInterval(function(){
                 if($color>0.01){
-                    $color = $color - 0.03;
+                    $color = $color - 0.01;
                     $html.attr("style","--scrollColor:rgba(0,0,0,"+$color+")");
                 }else{clearInterval(timer1);}
             }, 10);
