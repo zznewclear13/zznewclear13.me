@@ -11,7 +11,7 @@ path: beijing-jiuxianqiao-community
 
 ![Birdview](../images/articles/design_07/Birdview.jpg)
 
-I made this renovation design of Jiuxianqiao Community with Liren Shen. In this project, we thought about adding a roof on the courtyark, changing it to a parking lot, solving the parking problem in Jiuxianqiao Community. In each block of this community, we added co-working office, youth hotel, and shop to keep this community in a good economy state.
+I made this renovation design of Jiuxianqiao Community with Liren Shen. In this project, we thought about adding a roof on the courtyard, changing it to a parking lot, solving the parking problem in Jiuxianqiao Community. In each block of this community, we added co-working office, youth hotel, and shop to keep this community in a good economy state.
 
 ![Analysis](../images/articles/design_07/Analysis.jpg)
 
