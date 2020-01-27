@@ -31,5 +31,11 @@ var $color = 0.5;
             }, 10);
             //$body.removeClass('scroll');
         }, 1000);
+    });
+    $(window).resize(function(){
+        var $header = $('.header');
+        if($(window).width()<=550){
+            $header.css('transform','translateY(0)');
+        }
     })
 })(jQuery);
