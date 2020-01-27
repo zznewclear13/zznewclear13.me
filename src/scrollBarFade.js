@@ -1,26 +1,20 @@
-
-function youtubeVidScroll() {
-	var wScroll = $(window).scrollTop();
-	console.log(wScroll);
-	//$('.video-strip').css('background-position','center -'+ wScroll +'px');
-}
-
 var $color = 0.5;
 
-(function(timer1, timer2, timer3){
+(function(timer1, timer2){
     $(window).scroll(function(){
-        var $wScroll = $(window).scrollTop(),
-            $animComponent = $('.animComponent'),
+        var $scrollDist = $(window).scrollTop(),
             $body = $('.scrollBar'),
-            $html = $('html');
-        if($wScroll!=0){
-            clearTimeout(timer3);
-            timer3 = setTimeout(function(){
-                $animComponent.hide();
-            }, 300);        
-        }else{
-            clearTimeout(timer3);
-            $animComponent.show();}
+            $html = $('html'),
+            $header = $('.header'),
+            $bannerMeta = $('.bannerMeta'),
+            $bannerImg = $('.bannerImg');
+
+        $bannerImg.css('transform','translateY('+$scrollDist/2+'px)'); 
+        $bannerMeta.css('transform','translateY('+$scrollDist/3+'px)'); 
+        if($(window).width()>550){
+            $header.css('transform','translateY(-'+$scrollDist/2+'px)'); 
+        }
+
 
         $body.addClass('scroll');
         $color = 0.5;

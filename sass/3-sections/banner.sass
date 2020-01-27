@@ -12,7 +12,7 @@
 
 .home-wrap
     banner 
-        //position: relative
+        position: relative
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -20,59 +20,77 @@
         align-items: center
         text-align: center
         height: 100vh
-        background: 
-                image: url(../images/banner/bn1.jpg)
-                repeat: no-repeat
-                position: center
-                size: cover
-        transition: all 0.3s ease-in-out        
-                    
-        .bn1
-            color: white
-            line-height: 1
-            margin: 0 auto
-            padding: 0
-            width: calc( 100vw - 100px )  
+        overflow-Y: hidden
+        .bannerImg
+            z-index: -1
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background: 
+                    image: url(../images/banner/bn1.jpg)
+                    repeat: no-repeat
+                    position: center
+                    size: cover      
 
-        .empty
-            width: 100px
-            height: 20px
-        
-        .anim-wrap
-            height: 20px
-            .animComponent
-                width: 150px
+        .bannerMeta   
+            position: absolute
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            text-align: center
+            top: 0
+            left: 0   
+            height: 100%
+            width: 100%      
+            .bn1
+                color: white
+                line-height: 1
+                margin: 0 auto
+                padding: 0
+                width: calc( 100vw - 100px )  
+
+            .empty
+                width: 100px
                 height: 20px
-                align-items: center
+            
+            .anim-wrap
+                height: 20px
+                .animComponent
+                    width: 150px
+                    height: 20px
+                    align-items: center
 
-                span,
-                span::before,
-                span::after 
-                    top: 0 
-                    bottom: 0 
-                    margin: -2px 0
-                    padding: 0
-                    content: ""
-                    display: block
-                    height: 3px
-                    width: 100%
-                    background: rgba(255,255,255,1)
-                    position: relative
+                    span,
+                    span::before,
+                    span::after 
+                        top: 0 
+                        bottom: 0 
+                        margin: -2px 0
+                        padding: 0
+                        content: ""
+                        display: block
+                        height: 3px
+                        width: 100%
+                        background: rgba(255,255,255,1)
+                        position: relative
 
-                span::before
-                    height: 2px
-                    animation-name: pop
-                    animation-duration: 1s
-                    animation-timing-function: linear
-                    animation-iteration-count: infinite
+                    span::before
+                        height: 2px
+                        animation-name: pop
+                        animation-duration: 1s
+                        animation-timing-function: linear
+                        animation-iteration-count: infinite
 
-                span::after  
-                    height: 2px
-                    animation-name: pop
-                    animation-delay: 0.3s
-                    animation-duration: 1s
-                    animation-timing-function: ease-in-out
-                    animation-iteration-count: infinite
+                    span::after  
+                        height: 2px
+                        animation-name: pop
+                        animation-delay: 0.3s
+                        animation-duration: 1s
+                        animation-timing-function: ease-in-out
+                        animation-iteration-count: infinite
    
 
 
@@ -83,6 +101,7 @@
             height: 100vh
             overflow: hidden
             
-            .bn1
-                width: calc(100vw - 100px)
+            .bannerMeta
+                .bn1
+                    width: calc(100vw - 100px)
                 
